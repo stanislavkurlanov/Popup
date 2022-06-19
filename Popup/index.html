@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurlanov S.V. Resume</title>
+    <link href="styles.css" rel="stylesheet"/>
+
+    
+</head>
+<body>   
+    
+    <div class="container">
+    <div class="info">
+        <img src="Я.jpg"alt="My foto" id="avatar">  
+        <h1>Курланов Станислав Владимирович</h1>  
+        <p>Я sales с многолетним опытом работы в крупных российских и зарубежных компаниях.</p>
+        <p>Я люблю работать в полях, общаться с людьми,вести переговоры и убеждать людей.</p>
+
+        <h4>Мои социальные сети</h4>
+      
+        <a href="https://vk.com/id6233319" target="_blank">Моя страничка в VK</a>
+        |
+        <a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
+     
+    </div>
+
+        <div class="card bg-yellow">
+        <h2>Мои увлечения</h2>
+        <ol class="list">
+            <li>Велопрогулки</li>
+            <li>Плавание</li>
+            <li>Путешествия на автомобиле</li>
+        </ol>
+    </div>
+
+    <div class="card bg-green">
+        <h2>Мои интересы</h2>
+        <ol type="I">
+            <li>Изучение языков</li>
+            <li>Программирование</li>
+            <li>Изучение техники</li>
+        </ol>
+</div>
+
+        <div class="card bg-red">
+        <h2>Опыт работы</h2>
+        <table class="table">
+         
+            <tr>
+                <td>Mars</td>
+                <td>MTDE</td>
+                <td>2018-2021</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ригли</td>
+                <td>Торговый представитель</td>
+                <td>2011-2028</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Кристалл-Вест</td>
+                <td>Торговый представитель</td>
+                <td>2008-2011</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ЛаВина</td>
+                <td>Мерчендайзер</td>
+                <td>2007-2008</td>
+                <td></td>
+            </tr>
+        </table>
+    <!-- </div>
+
+        <div class="card">
+        <h2>Мои свободные друзья</h2>
+        <a href="index.html" target="_blank">My free frends</a>
+    </div> -->
+
+    <div class="card">
+    <h2>Связаться со мной</h2>
+
+    <form>
+        <label for="name">Ваше имя:</label>
+    <input type="text" id="name" placeholder="Введите ваше имя...">  
+    <br>
+    <label for="email">Ваш Email:</label>
+    <input type="email" id="email" placeholder="Введите ваш email...">
+    </div>
+ 
+<br>
+
+<label for="text">Ваше сообщение:</label>
+<textarea id="text" rows="4" cols=""></textarea>
+<br>
+<div class="callme_button">
+</form>
+
+<!-- <input type="submit" value="Связаться!"> -->
+<button>
+    <p>Перезвоните мне</p>
+</button>
+</div>
+
+
+
+
+<!-- 
+<div class="box-model">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+</div> -->
+
+<!-- <div style="margin-bottom: 500px"></div> -->
+
+</div>
+
+
+<div class="popups_inner">
+    <div class="popup callme_popup">
+        <a class="close_popup">X</a>
+        <h3>Поделитесь информацией о себе</h3>
+        <p>Ответьте на несколько уточняющих вопросов</p>
+        <form>
+            <input type="text" name="name" placeholder="Напишите название компании">
+            <input type="text" name="name" placeholder="Ваш телефон">
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="submit" value="Отправить">
+        </form>
+
+
+    </div>
+</div>
+
+
+<script src="jquery-3.6.0.min.js"></script>
+<!-- <script src="index.js"></script> -->
+<script>
+
+$('.callme_button button').click(function() {
+    //  $('.popups_inner').fadeIn();
+     $('.popups_inner').addClass('active');
+});
+
+$('.close_popup').on('click', function() {
+    $('.popups_inner').removeClass('active');
+}); 
+
+// $(".callme_buttom buttom").on('click',function(e){})
+
+</script>
+
+</body>
+
+</html>
